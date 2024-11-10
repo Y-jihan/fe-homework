@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.navi {
+    float: right;
+    margin-top: 15px;
+}
+.navi a {
+    color: black;
+    font-weight: 700;
+    margin-right: 5px;
+    font-size: 18px;
+}
+.navi .more {
+    display: inline-block;
+    width: 80px;
+    height: 24px;
+    background-color: #257DEB;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.head-ph {
+    background-image: url(baidu.png);
+    background-repeat: no-repeat; 
+    height: 258px;
+    width: 540px;
+    margin: 0 auto; 
+}   
+.search {
+    width: 720px;
+    height: 50px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.text {
+    width: 600px;
+    height: 50px;
+    border: 1px solid #9EA2A4;
+    border-right: 0px;
+    float: left;
+}
+input:focus {
+    outline: none;
+
+}
+.button {
+    width: 110px;
+    height: 50px;
+    color: #fff;
+    background-color: #257DEB;
+    border-style: none;
+    float: left;
+    font-size: 18px;
+}
+.center-ph {
+    width: 144px;
+    height: 144px;
+    margin: 0 auto;
+    margin-top: 100px;
+    background-image: url(center-ph.png)
+}
+
+.center1{
+    width: 110px;
+    height: 20px;
+    margin: 0 auto;
+    margin-top: 5px;
+} 
+.center2 {
+    width: 180px;
+    height: 20px;
+    margin: 0 auto;
+    color: #9EA2A4;
+}
+
+.foot-1 {
+    width: 408px;
+    height: 14px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+.foot-1 a {
+    color: #9EA2A4;
+    font-size: 14px;
+    margin-left: 25px;
+}
+
+.foot {
+    width: 571px;
+    height: 14px;
+    margin: 0 auto;
+    margin-top: 20px;
+    color: #9EA2A4;
+}
+.foot a {
+    color: #9EA2A4;
+    font-size: 14px;
+}

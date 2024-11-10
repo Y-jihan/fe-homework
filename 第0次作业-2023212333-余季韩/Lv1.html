@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lv1</title>     
+
+        <style>
+            div {
+                width: 120px;
+                height: 100px;
+                background-color: pink;
+            }
+            .table1 {
+                border: 1px solid #000;
+                width: 400px;
+                /* text-align: center; */
+                border-spacing: 0;
+            }
+            td {
+                border: 1px solid #000;               
+            }
+
+            .table-data {
+                text-align: center; 
+                height: 40px;
+                width: 30%;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h2>这是我的二级标题</h2>
+        <p>百度一分钟，听人吹牛两小时（这是一个p标签）</p>
+        <h3>这是我的三级标题</h3>
+        <img src="../../../../../图片/下载图片/emoji.jpg" alt="emo">
+        <br>
+
+       <div>
+        我是一个宽120px，高100px的一个颜色为粉色的盒子
+       </div>
+
+        <a href="https://baidu.com">点击我可以跳到百度哦</a>
+
+        <ul>
+            <li>我</li>
+            <li>是</li>
+            <li>无</li>
+            <li>序</li>
+            <li>表</li>
+        </ul><hr>
+
+        <form action="">
+            <input type="text" placeholder="我是一个输入框" style="width: 200px;">
+            <input type="button" value="不管怎么按都没用的按钮">
+        </form><br>
+
+            <form action="/">
+                <table class="table1">
+                    <tr>
+                        <td class="table-data">用户名</td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td class="table-data">密码</td>
+                        <td><input type="password"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="table-data">
+                        <input type="submit" name="submit" id="submit">
+                        <input type="reset">
+                        </td> 
+                    </tr>
+                </table>
+            </form>
+
+        <form action="/">
+             性别：<input type="radio" name="sex" value="男">男
+            <input type="radio" name="sex" value="女" checked>女
+            城市：<select name="city" id="city">
+                <option value="sichuan" selected>四川</option>
+                <option value="chongqing">重庆</option>
+                <option value="huoxing">火星</option>
+                <option value="moon">月球</option>
+                </select>
+                爱好：<input type="checkbox" name="hobby" id="hobby">打游戏
+                <input type="checkbox" name="hobby" checked>听音乐
+                <input type="checkbox" name="hobby" checked>看电影
+                <input type="checkbox" name="hobby" >运动
+                <input type="checkbox" name="hobby" checked>睡觉<br>
+                目标：<textarea name="goal" id="goal">好好学习，天天开心</textarea>
+        </form>
+
+    </body>      
+</html>
+
+
+<!-- 
+Q1:发现用选择器和直接在标签内用属性是有区别的，属性中的align要变成text-align
+Q2:在给table标签加class的时候出问题：在标签中border=“1”可以一键全框，在css中要用border:1px solid #000，
+而且只有最外层！！单元格里压根没有,必须要在td标签选择器里也加border: 1px solid #000才有
+Q3:要将单元格间的缝隙去掉，也不能单纯用cellspacing属性了，需要在table的class中加border-spacing: 0;或者border-collapse: collapse;
+前者的线要深些粗些
+Q4:在table里面text-align: center了就可以所有单元格一键居中
+-->
+
+
