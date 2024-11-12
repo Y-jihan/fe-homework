@@ -8,7 +8,7 @@ a {
     text-decoration: none;
     color: #1E6B7D;
 }
-@font-face {
+/* @font-face {
     font-family: 'icomoon';
     src:  url('fonts/icomoon.eot?pi7xwo');
     src:  url('fonts/icomoon.eot?pi7xwo#iefix') format('embedded-opentype'),
@@ -18,7 +18,7 @@ a {
     font-weight: normal;
     font-style: normal;
     font-display: block;
-}
+} */
 
 .container {
     width: 435px;
@@ -63,13 +63,20 @@ a {
     margin: 15px auto;
     margin-bottom: 55px;
 }
-table {
-    
+/* .log-in {
     width: 325px;
     height: 100px;
     margin: 0 auto;
+    /* overflow: hidden; */
+    /* margin-bottom: 45px; */
+
+table {
+    width: 325px;
+    height: 100px; 
+    margin: 0 auto;
     border: 1px solid #999999;
     border-collapse: collapse;
+    /* boerder-spacing: 0; */
     border-radius: 10px;
     margin-bottom: 15px;
 }
@@ -86,11 +93,20 @@ input,select:focus {
 }
 #p-num {
     text-align: center;
-    width: 50px;
+    width: 55px;
     float: right;
 }
+.b1 {
+    border-radius: 10px 0px 0px 0px;
+}
+.b2 {
+   border-radius: 0px 10px 0px 0px;
+}
+.b3 {
+    border-radius: 0px 0px 10px 10px;
+}
 .i-ph {
-    width: 225px;
+    width: 205px;
     padding: 0 10px;
 }
 .l1{
@@ -98,15 +114,16 @@ input,select:focus {
     height: 50px;
     background-image: url(./t2-img/l1.png);
     background-position: 10px center;
-
     background-repeat: no-repeat;
+    
+
     /* float:right; */
 }
 
 
 .password {
     float: left;
-    width: 287px;
+    width: 275px;
 }
 .l2 {
     width: 36px;
