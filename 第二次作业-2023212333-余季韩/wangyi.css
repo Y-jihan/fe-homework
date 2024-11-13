@@ -25,6 +25,9 @@ a {
     height: 660px;
     margin: 0 auto;
     background-color: #fff;
+    /* 如果角上有图就变不圆了 */
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 1px #999999;
 }
 .top {
     height: 60px;
@@ -76,7 +79,6 @@ table {
     margin: 0 auto;
     border: 1px solid #999999;
     border-collapse: collapse;
-    /* boerder-spacing: 0; */
     border-radius: 10px;
     margin-bottom: 15px;
 }
@@ -87,16 +89,30 @@ table input,select {
     border: none;
     height: 50px;
 }
-
 input,select:focus {
     outline: none;
 }
+
+.l1{
+    width: 80px;
+    height: 50px;
+    background-image: url(./t2-img/l1.png);
+    background-position: 10px center;
+    background-repeat: no-repeat;
+}
+
 #p-num {
     text-align: center;
     width: 55px;
     float: right;
 }
-.b1 {
+
+.i-ph {
+    width: 205px;
+    padding: 0 10px;
+}
+
+/* .b1 {
     border-radius: 10px 0px 0px 0px;
 }
 .b2 {
@@ -104,24 +120,9 @@ input,select:focus {
 }
 .b3 {
     border-radius: 0px 0px 10px 10px;
-}
-.i-ph {
-    width: 205px;
-    padding: 0 10px;
-}
-.l1{
-    width: 80px;
-    height: 50px;
-    background-image: url(./t2-img/l1.png);
-    background-position: 10px center;
-    background-repeat: no-repeat;
-    
+} */
 
-    /* float:right; */
-}
-
-
-.password {
+#password {
     float: left;
     width: 275px;
 }
@@ -161,34 +162,40 @@ input.check-log[type="checkbox"]:checked+label {
     height: 12px;
     margin-right: 10px;
 } */
+ /* a属于inline-block，不能加浮动 */
 .other .yanzheng {
     display: block;
     float: right;
     margin-left: 10px;
 }
 
-.log-in-bottom {
+.log-in-buttom {
+    /* buttom用不了outline: none; 伪类专用*/
+    /* outline: none; */
+    display: block;
+    border: 0;
     width: 325px;
     height: 50px;
     margin: 0 auto;
+    text-align: center;
     color: #fff;
     font-size: 18px;
     background-color: #FE3A3B;
     border-radius: 10px;
-    text-align: center;
     line-height: 50px;
     margin-bottom: 15px;
 }
 .sign-in {
     width: 325px;
-    height: 50px;
+    /* height: 50px; */
     font-size: 16px;
     margin: 0 auto;
     /* color: #999999; */
     text-align: center;
+
 }
 .sign-in a {
-    color: #999999;
+    color: #142B55;
     text-decoration: underline;
 }
 
@@ -196,6 +203,7 @@ input.check-log[type="checkbox"]:checked+label {
     width: 325px;
     margin: 0 auto;
     text-align: center;
+    margin-top: 45px;
 }
 span {
     display: inline-block;
